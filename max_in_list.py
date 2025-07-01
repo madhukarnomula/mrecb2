@@ -5,4 +5,4 @@ for i in range(len(a)):
     if a[i]>max:
         smax=max
         max=a[i]
-print(smax)
+print(smax):
