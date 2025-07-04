@@ -1,0 +1,26 @@
+#old{
+    padding:100px;
+    width: 480px;
+}
+fieldset{
+    border: 2px solid black 75%;
+    border-radius: 2%;
+}
+button{
+    width:350px;
+    height:40px;
+}
+#signup{
+    background-color:rgb(27, 130, 240);
+    color:white
+}
+#fog{
+    margin-left: 50px;
+}
+#new{
+    margin-right: 150px;
+}
+#in{
+    width:350px;
+    height:40px;
+}
