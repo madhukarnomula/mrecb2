@@ -1,0 +1,33 @@
+div{
+    width:200px;
+    border-right:0.2px solid lightslategray;
+    /* cursor:pointer; */
+}
+a{
+    text-decoration: none;
+    color: black;
+  
+}
+h4{
+    margin-bottom: 1px;
+    font-weight:200;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+/* #logo{
+    height:100px;width:100px;
+    padding-right: 80px;
+   
+} */    
+.youtubelogo{
+    margin: 0;padding: 0;
+    height: 30px;width:100px;
+    border: none;
+
+
+}
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
