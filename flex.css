@@ -1,0 +1,43 @@
+.container{
+    height:600px;
+    width:800px;
+    border:2px solid black;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content:space-evenly;
+    /* gap:10px */
+    align-items: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRWI3lX3z1xPbRKWseNoMK1V5fdJpNDnV_w&s);
+    background-size: cover;
+}
+/*.google{
+    height: 40px;
+    width:40px;
+    border:2px solid black; 
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+body{
+    display: flex;
+    justify-content:center;
+    margin:20px
+}
+#google{
+    height:40px;
+    width:40px;
+}
+#fast{
+    height:40px;
+    width:40px
+}
+#youtube{
+    height:40px;
+    width:40px
+}
+#facebook{
+    height:40px;
+    width:40px
+}
