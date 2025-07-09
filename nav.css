@@ -1,0 +1,37 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    margin:0px 20px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color:aquamarine;
+}
+.logo span{
+    color:aqua;
+}
+.navbar ul{
+    list-style-type:none;
+    padding: none;
+    margin: none;
+    background-color:blueviolet;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    display:block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #101010;
+}
+.navbar li{
+    float:left;
+}
