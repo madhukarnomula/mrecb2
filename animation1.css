@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color:darkgrey;
+}
+h1{
+    margin-bottom: 40px;
+    color:#333;
+}
+.box{
+    width:100px;
+    height:100px;
+    margin:20px;
+    display:inline-block;
+    background-color: steelblue;
+}
+.fade-in{
+    animation:fadeIn 2s ease forwards;
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+.slide-in{
+    animation:slideIn 2s ease forwards;
+}
+@keyframes slideIn{
+    0%{transform: translateX(-200px);opacity: 0;}
+    100%{transform: translateX(0);opacity:1}
+}
+.bounce{
+    animation:bounce 1s ease infinite;
+}
+@keyframes bounce{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-30px);}
+}
+.rotate{
+    animation: rotate 01s linear infinite;
+    border-radius:50%;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.scale-up{
+    animation: scaleUp 2s ease-in-out forwards;
+}
+@keyframes scaleUp{
+    0%{transform:scale(0); opacity:0;}
+    100%{transform:scale(1);opacity:1;}
+}
+.label{
+    margin-top:10px;
+    font-weight:bold;
+}
+.block{
+    display: inline-block;
+}
