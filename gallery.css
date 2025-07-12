@@ -1,0 +1,32 @@
+.main{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:20px
+}
+.p1:hover{
+    width:570px;
+    height:412px;
+}
+.p2:hover{
+    opacity:0.3;
+}
+.p3:hover{
+    transform: scale(1.3);
+}
+.p4:hover{
+    transform: rotate(45deg);
+}
+.p5:hover{
+     background-color: orange;
+    transform: rotate(30deg) scale(1.2);
+    border-radius: 50%;
+}
+.p6:hover{
+    transform: translate(50px);
+}
+.fan:hover{
+    transform: rotate(360deg);
+}
+.fan {
+    transition: transform 1s ease-in-out;
+}
