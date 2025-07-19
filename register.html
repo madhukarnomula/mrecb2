@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return cpass()">
+        <h1>Registration Form</h1>
+        <label>Enter Password:</label>
+        <input type="password" id="pass1" placeholder="enter password" required>
+        <br><br>
+        <label>Confirm Password:</label>
+        <input type="password" id="pass2" placeholder="confirm password" required>
+        <br><br>
+        <button>Submit</button>
+    </form>
+    <script>
+        function cpass(){
+            let p1=document.getElementById("pass1").value;
+            let p2=document.getElementById("pass2").value;
+            if(p1===p2){
+                alert("Password Matched");
+                return true;
+            }
+            else{
+                alert("Password doesn't matched");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
