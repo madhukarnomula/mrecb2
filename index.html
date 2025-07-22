@@ -4,61 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <style>
-        body{
-            background-color:darkgray;
+    <style>
+        .newClass{
+            color:blueviolet;
+            font-weight: bold;
         }
-    </style> -->
+        #newId{
+            color:red;
+        }
+        .butClass{
+            color:red;
+            background-color: black;
+        }
+        .class2{
+            color:palevioletred;
+        }
+        #box{
+            height:100px;
+            width:100px;
+            border:2px solid black;
+        }
+    </style>
 </head>
 <body>
-    <!-- <h1 id="head1">MREC</h1>
-    <p id="info">Engineering college</p>
-    <h1 id="head2" class="head3">IT</h1>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <p class="para">hello</p>
-    <script>
-        document.getElementById("head1").innerText="MR Deemed to be University";
-        document.getElementById("info").innerText="located at maisammaguda";
-        //document.getElementById("head2").innerText="CSE";
-        document.getElementsByClassName("head3")[0].innerText="EEE";
-        document.getElementsByClassName("para")[0].style.color="red";
-        let items=document.getElementsByClassName("para");
-        items[1].style.color="yellow";
-        items[2].style.color="blue";
-        items[3].style.color="green";
-        items[4].style.color="chocolate";
-        items[5].style.color="gold";
-        items[6].style.color="pink";
-        items[7].style.color="orange";
-        items[8].style.color="brown";
-        items[9].style.color="violet";
+    <!-- <p class="info">Paragraph 1</p>
+    <p class="info">Paragraph 2</p>
+    <p class="info">Paragraph 3</p>
+    <h1 class="head">Heading 1</h1>
+    <h1 class="head">Heading 2</h1> -->
 
-        items[0].style.backgroundColor="blue";
-        items[1].style.backgroundColor="black";
+    <!-- <h1 id="myHeading">Welcome</h1>
 
-        let paras=document.getElementsByTagName("p");
-        paras[1].innerText="Change-1";
-        paras[2].innerText="Change-2";
+    <h2 class="class">Students</h2> -->
 
-        let headings=document.getElementsByTagName("h1");
-        headings[0].style.color="red";
-        headings[1].style.color="brown";
+    <p>This is a paragraph.</p>
+    <h1>Heading-1</h1>
+    <button>Submit</button>
+    <h1>Heading-2</h1>
+    <div id="box">Box</div>
 
-    </script> -->
-    <h1 id="head">Hello World</h1>
-    <p id="para"></p>
-    <p id="p"></p>
+    <h2 id="myHeading">Hello<span style="display:none;">Hidden</span>World!</h2>
+<script>
+    /*document.querySelectorAll(".info").forEach(p =>{
+        p.style.backgroundColor="yellow";
+    });
+    document.querySelectorAll(".head").forEach(h1=>{
+        h1.style.backgroundColor="red";
+    })*/
 
-    <button type="button" onclick="print(user)">print text</button>
-    <button type="button" onclick="document.getElementById('head').style.backgroundColor='blue'">click me1</button>
-    <button type
+    /*let e=document.querySelector("h1");
+    let idValue=e.getAttribute("id");
+    console.log("Id is "+idValue);
+
+    let c=document.querySelector("h2");
+    let classN=c.getAttribute("class");
+    console.log("Class is "+classN);*/
+
+    let para=document.querySelector("p");
+    para.setAttribute("class","newClass");
+    let head=document.querySelector("h1");
+    head.setAttribute("id","newId");
+    let but=document.querySelector("button");
+    but.setAttribute("class","butClass");
+    let head2=document.querySelectorAll("h1");
+    head2[1].setAttribute("class","class2");
+
+    let newDiv=document.createElement("div");
+    newDiv.innerText="new div";
+    let node=document.getElementById("box");
+    //node.append(newDiv);
+    //node.prepend(newDiv);
+    //node.before(newDiv);
+    node.after(newDiv);
+
+    node.remove();
+
+    let h=document.getElementById("myHeading");
+    console.log("tagName: "+h.tagName);
+    console.log("innerText: "+h.innerText);
+    console.log("innerHTML: "+h.innerHTML);
+    console.log("textContent: "+h.textContent);
+</script>
 </body>
 </html>
