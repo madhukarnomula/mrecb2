@@ -4,86 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .newClass{
-            color:blueviolet;
-            font-weight: bold;
-        }
-        #newId{
-            color:red;
-        }
-        .butClass{
-            color:red;
-            background-color: black;
-        }
-        .class2{
-            color:palevioletred;
-        }
-        #box{
-            height:100px;
-            width:100px;
-            border:2px solid black;
-        }
-    </style>
 </head>
 <body>
-    <!-- <p class="info">Paragraph 1</p>
-    <p class="info">Paragraph 2</p>
-    <p class="info">Paragraph 3</p>
-    <h1 class="head">Heading 1</h1>
-    <h1 class="head">Heading 2</h1> -->
+    <button onmousedown="alert('Mouse event')">Mouse Down</button><br><br>
 
-    <!-- <h1 id="myHeading">Welcome</h1>
+    <input type="text"
+    onkeydown="console.log('Key Down')"
+    onkeyup="console.log('Key Up')"
+    onkeypress="console.log('Key Pressed')"
+    placeholder="Type something"><br><br>
 
-    <h2 class="class">Students</h2> -->
+    <form onsubmit="alert('Form submitted'); return false;">
+        <input type="text" placeholder="Enter name">
+        <button type="submit">Submit</button>
+    </form><br>
 
-    <p>This is a paragraph.</p>
-    <h1>Heading-1</h1>
-    <button>Submit</button>
-    <h1>Heading-2</h1>
-    <div id="box">Box</div>
+    <select onchange="alert('value changed')">
+        <option value="">Select option</option>
+        <option>Apple</option>
+        <option>Banana</option>
+    </select><br><br>
 
-    <h2 id="myHeading">Hello<span style="display:none;">Hidden</span>World!</h2>
-<script>
-    /*document.querySelectorAll(".info").forEach(p =>{
-        p.style.backgroundColor="yellow";
-    });
-    document.querySelectorAll(".head").forEach(h1=>{
-        h1.style.backgroundColor="red";
-    })*/
+    <input type="text"
+        onfocus="console.log('Input Focused')"
+        onblur="console.log('Input Lost Focus')"
+        placeholder="Click here"><br><br>
 
-    /*let e=document.querySelector("h1");
-    let idValue=e.getAttribute("id");
-    console.log("Id is "+idValue);
+    <script>
+        window.onload=function(){
+            alert("Page fully loaded");
+        };
 
-    let c=document.querySelector("h2");
-    let classN=c.getAttribute("class");
-    console.log("Class is "+classN);*/
+        window.onresize=function(){
+            console.log("Window resized");
+        };
 
-    let para=document.querySelector("p");
-    para.setAttribute("class","newClass");
-    let head=document.querySelector("h1");
-    head.setAttribute("id","newId");
-    let but=document.querySelector("button");
-    but.setAttribute("class","butClass");
-    let head2=document.querySelectorAll("h1");
-    head2[1].setAttribute("class","class2");
-
-    let newDiv=document.createElement("div");
-    newDiv.innerText="new div";
-    let node=document.getElementById("box");
-    //node.append(newDiv);
-    //node.prepend(newDiv);
-    //node.before(newDiv);
-    node.after(newDiv);
-
-    node.remove();
-
-    let h=document.getElementById("myHeading");
-    console.log("tagName: "+h.tagName);
-    console.log("innerText: "+h.innerText);
-    console.log("innerHTML: "+h.innerHTML);
-    console.log("textContent: "+h.textContent);
-</script>
+        window.onscroll=function(){
+            console.log("Scrolling the page");
+        };
+        
+    </script>
 </body>
 </html>
