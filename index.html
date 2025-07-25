@@ -6,43 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button onmousedown="alert('Mouse event')">Mouse Down</button><br><br>
+    <button id="btn1">btn1</button>
+    <button id="btn2">btn2</button>
+    <button id="btn3">btn</button>
 
-    <input type="text"
-    onkeydown="console.log('Key Down')"
-    onkeyup="console.log('Key Up')"
-    onkeypress="console.log('Key Pressed')"
-    placeholder="Type something"><br><br>
-
-    <form onsubmit="alert('Form submitted'); return false;">
-        <input type="text" placeholder="Enter name">
-        <button type="submit">Submit</button>
-    </form><br>
-
-    <select onchange="alert('value changed')">
-        <option value="">Select option</option>
-        <option>Apple</option>
-        <option>Banana</option>
-    </select><br><br>
-
-    <input type="text"
-        onfocus="console.log('Input Focused')"
-        onblur="console.log('Input Lost Focus')"
-        placeholder="Click here"><br><br>
-
-    <script>
-        window.onload=function(){
-            alert("Page fully loaded");
-        };
-
-        window.onresize=function(){
-            console.log("Window resized");
-        };
-
-        window.onscroll=function(){
-            console.log("Scrolling the page");
-        };
-        
-    </script>
+    <script src="button.js"></script>
 </body>
 </html>
