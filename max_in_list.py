@@ -1,4 +1,4 @@
-a=[2,4,2,9,10,3,24,89]
+a=[2,4,2,9,10,3,24,8]
 max=a[0]
 smax=max
 for i in range(len(a)):
@@ -8,4 +8,5 @@ for i in range(len(a)):
     elif(a[i]>smax and a[i]<max):
         smax=a[i]
 print(smax)
+
 
